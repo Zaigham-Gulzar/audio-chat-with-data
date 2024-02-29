@@ -1,0 +1,503 @@
+/* Add your styles here */
+.chat-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 360px;
+    height: 560px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Set the same radius for all corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-boxFull {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+     
+    
+}
+
+  
+  .chat-box.open {
+   
+    right: 10px;
+  }
+  
+  .chat-header {
+    background-color: #243472 !important;
+    background-image: url('../logo.png');
+    background-repeat: no-repeat;
+    background-size: 200px 113px;
+    background-position: 0px -22px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+    height: 100px;
+  }
+  
+  .chat-title {
+    /* font-weight: bold; */
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    font-size: 15px;
+  }
+  .chat-close{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+  }
+  .chat-toggle {
+    cursor: pointer;
+  }
+  
+  .chat-messages {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 325px;
+    height: 867px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  input[type="text"] {
+    flex: 1; /* Allow the input field to grow to fill available space */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    white-space: pre-wrap; /* Allow text to wrap to a new line when it exceeds the width */
+    word-wrap: break-word; /* Ensure long words wrap to a new line */
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 70%; /* Adjust as needed */
+    word-wrap: break-word;
+    display: inline-block;
+  }
+  
+  .user-messageFull {
+    background-color: #a3eaf7; /* User message background color */
+    max-width: 95%;
+    margin-right: auto; /* Right-align user messages */
+    margin-left: 10px; /* Add some space between user messages and the chat container */
+    padding: 8px 12px;
+    border-radius: 10px; /* Rounded corners for user messages */
+    display: inline-block; /* Allow message div to size itself to text content */
+       
+    word-wrap: break-word; /* Allow long words to wrap to the next line */
+    margin-bottom: 8px; /* Add margin to separate messages vertically */
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
+}
+
+.support-messageFull {
+  max-width: 95%;
+    background-color: #f0f0f0; /* Support message background color */
+    color: #333; /* Support message text color */
+    margin-right: auto; /* Left-align support messages */
+    margin-left: 10px; /* Add some space between support messages and the chat container */
+    padding: 8px 12px;
+    border-radius: 10px; /* Rounded corners for support messages */
+    display: inline-block; /* Allow message div to size itself to text content */
+     word-wrap: break-word; /* Allow long words to wrap to the next line */
+    margin-bottom: 8px; /* Add margin to separate messages vertically */
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
+}
+
+.loading-gif {
+  background-color: transparent !important;
+  width: 25px;
+  display: flex;
+}
+  
+  
+  /*  */
+  input:focus {
+    outline: none;
+  }
+  
+  .chat-input input {
+    
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    white-space: pre-wrap;  
+    word-wrap: break-word; 
+  }
+  
+  
+  .chat-input button {
+    background-color: #ff0f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+
+  /* Add your styles here */
+
+/* Chat button */
+/* Add your styles here */
+
+/* Chat button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0f00;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Circular shape */
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Adjust icon size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 999;
+  }
+  
+  .chat-button:hover {
+    background-color: #ff0000;
+  }
+  
+  .chat-button.open {
+    background-color: #ff0000; /* Change color when chat is open */
+   
+  }
+  /* textarea{
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  } */
+  .textAreaAS {
+     
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  }
+  
+  .textAreaAS::placeholder{
+    color: #999;
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    padding-left: 2px;
+  }
+
+  /* import "../custom_styles/ChatBox.css"; // Import your CSS for styling */
+
+
+
+  .chat-boxFull {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chat-inputFull {
+  
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  justify-content: center;
+  padding: -0px;
+  border: 1px solid #bec1c3;
+  /* background-color: #f4f7f9;; */
+  border-radius: 12px 12px 12px 12px;
+   
+  margin-top: auto;
+  /* height: 18vh; */
+  height: 90px;
+  width: 50%;
+   
+   
+  padding: 0px 20px 0px 20px;
+  justify-content: center;
+   
+}
+
+/* Optional: If you have input or other elements inside .chat-inputFull */
+.chat-inputFull > * {
+  margin: 0;
+}
+
+
+.textAreaASFull {
+     
+  font-size: 16px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.textAreaASFull::placeholder{
+  color: #999;
+  font-size: 16px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  padding-left: 2px;
+}
+
+
+.chat-messages {
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+  width: 325px;
+  height: 867px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.chat-messagesFull {
+  padding: 10px;
+   
+   
+  width: 52%;
+  height: 80vh;
+   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-Items: "center";
+  
+}
+
+
+.chat-headerFull {
+  background-color: #243472 !important;
+  background-image: url('../logo.png');
+  background-repeat: no-repeat;
+  background-size: 200px 113px;
+  background-position: 0px -22px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  border-radius: 8px;
+  height: 85px;
+}
+
+.chat-closeFull{
+    position: absolute;
+   margin-top: 20px;
+   margin-right: 10px;
+   top: 4px;
+    right: 10px;
+}
+ 
+
+.chat-titleFull {
+  /* font-weight: bold; */
+  position: absolute;
+  top: 27px;
+    left: 240px;
+    font-size: 16px;
+}
+
+/* @media (max-height: 1030px) {
+  .chat-messagesFull {
+    height: 75vh;
+  }
+}
+
+
+@media (max-height: 986px) {
+  .chat-messagesFull {
+    height: 72vh;
+  }
+}
+
+@media (max-height: 880px) {
+  .chat-messagesFull {
+    height: 70vh;
+  }
+}
+
+@media (max-height: 820px) {
+  .chat-messagesFull {
+    height: 68vh;
+  }
+}
+
+@media (max-height: 770px) {
+  .chat-messagesFull {
+    height: 65vh;
+  }
+}
+
+@media (max-height: 750px) {
+  .chat-messagesFull {
+    height: 63vh;
+  }
+}
+
+@media (max-height: 660px) {
+  .chat-messagesFull {
+    height: 60vh;
+  }
+}
+
+@media (max-height: 620px) {
+  .chat-messagesFull {
+    height: 57vh;
+  }
+}
+
+@media (max-height: 565px) {
+  .chat-messagesFull {
+    height: 53vh;
+  }
+}
+
+@media (max-height: 545px) {
+  .chat-messagesFull {
+    height: 50vh;
+  }
+}
+
+@media (max-height: 540px) {
+  .chat-messagesFull {
+    height: 48vh;
+  }
+}
+@media (max-height: 460px) {
+  .chat-messagesFull {
+    height: 43vh;
+  }
+}
+
+@media (max-height: 420px) {
+  .chat-messagesFull {
+    height: 35vh;
+  }
+} */
+:root {
+  --base-height: 75; /* Adjust this to your default height */
+}
+
+.chat-messagesFull {
+  height: calc(var(--base-height) * 1vh);
+}
+
+@media (max-height: 1030px) {
+  :root {
+    --base-height: 75;
+  }
+}
+
+@media (max-height: 986px) {
+  :root {
+    --base-height: 72;
+  }
+}
+
+@media (max-height: 880px) {
+  :root {
+    --base-height: 70;
+  }
+}
+
+@media (max-height: 820px) {
+  :root {
+    --base-height: 68;
+  }
+}
+
+@media (max-height: 765px) {
+  :root {
+    --base-height: 65;
+  }
+}
+
+@media (max-height: 700px) {
+  :root {
+    --base-height: 62;
+  }
+}
+
+@media (max-height: 640px) {
+  :root {
+    --base-height: 58;
+  }
+}
+
+@media (max-height: 580px) {
+  :root {
+    --base-height: 55;
+  }
+}
+
+@media (max-height: 549px) {
+  :root {
+    --base-height: 50;
+  }
+}
+
+@media (max-height: 485px) {
+  :root {
+    --base-height: 45;
+  }
+}
+
+@media (max-height: 440px) {
+  :root {
+    --base-height: 40;
+  }
+}
+
+@media (max-height: 400px) {
+  :root {
+    --base-height: 35;
+  }
+}
+
+@media (max-width: 668px) {
+  .chat-messagesFull {
+    width: 80%;
+  }
+  .chat-inputFull{
+    width: 80%;
+  }
+}
+
+
+
+
+

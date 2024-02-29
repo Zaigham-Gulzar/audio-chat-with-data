@@ -1,0 +1,158 @@
+/* Common Styles for Both Chat Boxes */
+.chat-box,
+.chat-boxFull {
+  position: fixed;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Add any additional common styles */
+}
+
+/* Header Styles */
+.chat-header,
+.chat-headerFull {
+  background-size: 70% auto;
+  /* Add any additional header styles */
+}
+
+/* Title Styles */
+.chat-title,
+.chat-titleFull {
+  font-size: 2vw;
+  /* Add any additional title styles */
+}
+
+/* Close Button Styles */
+.chat-close {
+  top: 8px;
+  right: 8px;
+}
+
+/* Toggle Styles */
+.chat-toggle {
+  /* Add any additional toggle styles */
+}
+
+/* Messages Styles */
+.chat-messages,
+.chat-messagesFull {
+  width: 90%;
+  max-width: 400px;
+  height: 60vh;
+  /* Add any additional messages styles */
+}
+
+/* Input Styles */
+.chat-input,
+.chat-inputFull {
+  /* Add any additional input styles */
+}
+
+/* Input Field Styles */
+input[type="text"] {
+  flex: 1;
+  padding: 3%;
+  /* Add any additional input field styles */
+}
+
+/* Button Styles */
+.chat-input button {
+  /* Add any additional button styles */
+}
+
+/* Chat Button Styles */
+.chat-button {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  background-color: #ff0f00;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 999;
+}
+
+.chat-button:hover {
+  background-color: #ff0000;
+}
+
+.chat-button.open {
+  background-color: #ff0000;
+}
+
+/* Text Area Styles */
+.textAreaAS,
+.textAreaASFull {
+  font-size: 1.6vw;
+  /* Add any additional text area styles */
+}
+
+/* Placeholder Styles */
+.textAreaAS::placeholder,
+.textAreaASFull::placeholder {
+  color: #999;
+  padding-left: 2px;
+  /* Add any additional placeholder styles */
+}
+
+/* Loading GIF Styles */
+.loading-gif {
+  background-color: transparent !important;
+  width: 25px;
+  /* Add any additional loading GIF styles */
+}
+
+/* Full Screen Layout */
+.chat-boxFull {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Optional: Additional Styles for Full Screen Layout */
+.chat-headerFull {
+  /* Add any additional header styles for full screen */
+}
+
+/* Optional: Additional Styles for Full Screen Layout */
+.chat-closeFull {
+  display: none;
+  /* Add any additional close button styles for full screen */
+}
+
+/* Optional: Additional Styles for Full Screen Layout */
+.chat-titleFull {
+  /* Add any additional title styles for full screen */
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+  .chat-box, .chat-boxFull {
+    width: 95%;
+  }
+
+  .chat-button {
+    bottom: 3%;
+    right: 3%;
+  }
+
+  .chat-title, .chat-titleFull {
+    font-size: 18px;
+  }
+
+  .textAreaAS, .textAreaASFull {
+    font-size: 14px;
+  }
+}

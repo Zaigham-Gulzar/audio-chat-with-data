@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ifLUrK {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0px;
+  background-color: rgb(255, 255, 255);
+  flex-shrink: 0;
+  width: 100%;
+  height: 56px;
+  padding: 12px 10px 8px;
+  border-top: 1px solid rgb(249, 249, 249);
+}
+
+.ifLUrK > .footer-container {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 355px;
+  display: flex;
+  gap: 32px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  color: rgb(99, 104, 108);
+}
+
+.ifLUrK > .footer-container > .footer-center {
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
